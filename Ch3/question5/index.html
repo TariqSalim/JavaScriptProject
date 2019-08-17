@@ -1,0 +1,41 @@
+<!-- Create a web page like the one created in Programming Challenge 4. However, this program will calculate taxes
+based on compound conditions as follows:
+- No dependents and gross pay is greater than $1000.00, tax rate is 33%
+- No dependents and gross pay is less than or equal to $1000.00 tax rate is 28%
+- 1 to 3 dependents and gross pay is greater than $1000.000, tax rate is 25%
+- 1 to 3 dependents and gross pay is less than or equal to $1000.00 : tax rate is 22%.
+- 4 to 6 dependents and gross pay is greater than $1000.00, tax rate is 22%;
+- 4 to 6 dependents and gross pay is less than or equal to $1000.00: tax rate is 15%.
+- More than 6 dependents and gross pay is greater than $1000.00, tax rate is 15%.
+- More than 6 dependents and gross pay is less than or equal to $1000.00, tax rate is 10%.
+Be sure to include an appropriate title to the page.
+-->
+
+<!Doctype html>
+<html lang="en">
+<head>
+  <title> Chapter 3 Question 5 </title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="js/ext.js"> </script>
+</head>
+
+<body>
+  <div class="row"> <!-- start main row -->
+    <div class="col-lg-12">
+        <h1 class="text-center"> <b><u> Employee's Net Pay </u></b> </h1>
+     </div>
+    </div> <!-- end row --><br>
+
+    <div class="row"> <!-- start 2nd row -->
+        <div class="col-lg-12">
+             <p id="finalpay"> </p>
+        </div>
+    </div> <!-- end row --><br>
+
+
+</body>
+</html>
