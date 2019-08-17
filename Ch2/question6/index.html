@@ -1,0 +1,88 @@
+<!-- create a web page that that identifies whetehr or nnot the expressions are true or false.
+The page will display the following expressions. Under each expression, there should be a bbutton that the user can click to
+see if the left side of each expression is equivalent to the right side. If so, the value will be true. If not, the value will be false.
+1. (X>5)&& (X<10) == !(X<=5) || !(X>=10)
+2. ![([X>Y) && (Y<Z)]== !(X>Y) || !(Y<Z)
+3. (X==Y) || (X>Y) == (X==Y) && (X<Y)
+4. ![Z<X] || (Z<Y) == !(Z<X) && !(Z<Y)
+
+-->
+
+<!Doctype html>
+<html lang="en">
+<head>
+  <title> Chapter 2 Question 6 </title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="js/ext.js"> </script>
+</head>
+
+<body>
+  <div class="row"> <!-- start main row -->
+    <div class="col-lg-12">
+        <h1 class="text-center"> <b><u> Math Equation Test </u></b> </h1>
+     </div>
+    </div> <!-- end row --><br>
+
+    <div class="row">
+        <div class="col-lg-12">
+             <h4 class="text-center"> Equation will give result True or false based on the following value x=8, y=3, z=5</h4>
+        </div>
+    </div> <br>
+
+    <div class="row"> <!-- start 2nd row q1 -->
+        <div class="col-lg-6 text-right">
+              <label for="q1"> (X>5)&& (X<10) == !(X<=5) || !(X>=10) </label>
+        </div>
+
+
+
+      <div class="col-lg-6">
+        <button class="btn btn-success" onclick="checkfun1()"> Check </button>
+      </div>
+    </div> <!-- end 2nd row q1 --><br>
+
+
+    <div class="row"> <!-- start 2nd row q2 -->
+        <div class="col-lg-6 text-right">
+              <label for="q1"> ![([X>Y) && (Y&lt;Z)]== !(X>Y) || !(Y&lt;Z) </label>
+        </div>
+
+
+      <div class="col-lg-6">
+        <button class="btn btn-success" onclick="fun2()"> Check </button>
+      </div>
+    </div> <!-- end 2nd row q2 --><br>
+
+
+    <div class="row"> <!-- start 2nd row q3 -->
+        <div class="col-lg-6 text-right">
+              <label for="q1"> (X==Y) || (X>Y) == (X==Y) && (X&lt;Y) </label>
+        </div>
+
+
+      <div class="col-lg-6">
+        <button class="btn btn-success" onclick="checkfun3()"> Check </button>
+      </div>
+    </div> <!-- end 2nd row q3 --><br>
+
+
+    <div class="row"> <!-- start 2nd row q4 -->
+        <div class="col-lg-6 text-right">
+              <label for="q1"> ![Z &lt; X] || (Z&lt;Y) == !(Z &lt; X) && !(Z &lt;Y) </label>
+        </div>
+
+
+      <div class="col-lg-6">
+        <button class="btn btn-success" onclick="checkfun4()"> Check </button>
+      </div>
+    </div> <!-- end 2nd row q4 --><br>
+
+
+
+
+</body>
+</html>
