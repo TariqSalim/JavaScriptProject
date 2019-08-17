@@ -1,0 +1,106 @@
+<!-- create a web page that contains a simple math test. The page should have the following arithmetic probblems. Add a button under each problem which , when clicked, will display a prompt for the user to enter the answer. Add  a second button which, when clicked, will check to see if the user's answer is correct.
+the output should bbe either "correct" or "incorrect" displayed in an alert box.
+1. 5+9 = ??
+2. 4*6 = ??
+3. 25-14=??
+4. 48/3 = ??
+26 % 6 = ??
+-->
+
+<!Doctype html>
+<html lang="en">
+<head>
+  <title> Chapter 2 Question 7 </title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="js/ext.js"> </script>
+</head>
+
+<body>
+  <div class="row">
+    <div class="col-lg-12">
+        <h1 class="text-center"> Math Test </h1>
+     </div>
+    </div> <!-- end row --><br>
+
+    <div class="row">
+      <div class="col-lg-4 text-right">
+             <label for="q1"> 1. 5 + 9 = </label>
+      </div>
+
+      <div class="col-lg-4">
+             <input type="text" class="form-control text-left" size="5" id="txt1" placeholder="Enter your answer here">
+      </div>
+
+      <div class="col-lg-4">
+        <button onclick="checkfun1()"> Check </button>
+      </div>
+    </div> <!-- end row --><br>
+
+
+
+      <div class="row">
+        <div class="col-lg-4 text-right">
+               <label for="q2"> 2. 4 * 6 = </label>
+        </div>
+
+        <div class="col-lg-4">
+               <input type="text" class="form-control text-left" size="5" id="txt2" placeholder="Enter your answer here">
+        </div>
+
+        <div class="col-lg-4">
+          <button onclick="checkfun2()"> Check </button>
+        </div>
+      </div> <!-- end row --><br>
+
+
+
+        <div class="row">
+          <div class="col-lg-4 text-right">
+                 <label for="q3"> 3. 25 - 14 = </label>
+          </div>
+
+          <div class="col-lg-4">
+                 <input type="text" class="form-control text-left" size="5" id="txt3" placeholder="Enter your answer here">
+          </div>
+
+          <div class="col-lg-4">
+            <button onclick="checkfun3()"> Check </button>
+          </div>
+        </div> <!-- end row --><br>
+
+
+          <div class="row">
+            <div class="col-lg-4 text-right">
+                   <label for="q4"> 4. 48 / 3 = </label>
+            </div>
+
+            <div class="col-lg-4">
+                   <input type="text" class="form-control text-left" size="5" id="txt4" placeholder="Enter your answer here">
+            </div>
+
+            <div class="col-lg-4">
+              <button onclick="checkfun4()"> Check </button>
+            </div>
+          </div> <!-- end row --> <br>
+
+
+            <div class="row">
+              <div class="col-lg-4 text-right">
+                     <label for="q5"> 5. 26 % 6 = </label>
+              </div>
+
+              <div class="col-lg-4">
+                     <input type="text" class="form-control text-left" size="5" id="txt5" placeholder="Enter your answer here">
+              </div>
+
+              <div class="col-lg-4">
+                <button onclick="checkfun5()"> Check </button>
+              </div>
+            </div> <!-- end row --><br>
+
+</body>
+</html>
