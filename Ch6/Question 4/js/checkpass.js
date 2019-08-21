@@ -13,12 +13,13 @@ function validatepass()
   let lcase = document.getElementById("lcase");
   let digit = document.getElementById("digit");
   let len = document.getElementById("len");
+  let specialchar=document.getElementById("specialchar");
   //alert("Entered phone number is :"+phone);
 
   console.log("password is :"+pass);
 
   // Validate lowercase letters in pass
-  var lowerCaseLetters = /[a-z]/g;
+  let lowerCaseLetters = /[a-z]/g;
   if(pass.match(lowerCaseLetters)) {
     lcase.classList.remove("invalid");
     lcase.classList.add("valid");
@@ -28,7 +29,7 @@ function validatepass()
   }
 
   // Validate capital letters
-  var upperCaseLetters = /[A-Z]/g;
+  let upperCaseLetters = /[A-Z]/g;
   if(pass.match(upperCaseLetters)) {
     ucase.classList.remove("invalid");
     ucase.classList.add("valid");
@@ -36,6 +37,17 @@ function validatepass()
     ucase.classList.remove("valid");
     ucase.classList.add("invalid");
   }
+
+  let schar = /[$,@,&,*]/g;
+  if(pass.match(schar)){
+    specialchar.classList.remove("invalid");
+    specialchar.classList.add("valid");
+
+  }
+else {
+  specialchar.classList.remove("valid");
+  specialchar.classList.add("invalid");
+}
 
   //validate lenngth of pass
   if(pass.length>=4 && pass.length<=12)
@@ -49,7 +61,7 @@ function validatepass()
   }
 
   // Validate numbers
-  var numbers = /[0-9]/g;
+  let numbers = /[0-9]/g;
   if(pass.match(numbers)) {
     digit.classList.remove("invalid");
     digit.classList.add("valid");
