@@ -1,0 +1,67 @@
+
+<!Doctype html>
+<html lang="en">
+<head>
+  <title> Chapter 6 Question 3 </title>
+  <style>
+      .valid{
+        color:green;
+      }
+
+      .invalid{
+        color:red;
+      }
+    message{
+        background-color: grey;
+      }
+  </style>
+  <script src="js/checkpass.js"> </script>
+</head>
+
+<body>
+
+      <label> First Name: </label>
+      <input type="text" id="fname" placeholder="Enter your First name"><br/><br/>
+
+      <label> Last Name: </label>
+      <input type="text" id="lname" placeholder="Enter your Last name"><br/><br/>
+
+      <label> Street Address : </label>
+      <input type="text" id="street" placeholder="Enter your Street Address"><br/><br/>
+
+      <label> City </label>
+      <input type="text" id="city" placeholder="Enter your City"><br/><br/>
+
+      <label> State </label>
+      <input type="text" id="state" placeholder="Enter your State"><br/><br/>
+
+      <label> Zip Code </label>
+      <input type="text" id="zip" placeholder="Enter your Zip Code"><br/><br/>
+
+      <label> Email Address </label>
+      <input type="text" id="email" placeholder="Enter your Email Address"><br/><br/>
+
+      <label> Phone Number </label>
+      <input type="text" id="phone" placeholder="Enter your Phone Number"><br/>
+      <label>Example:(289)654-1222</label><br/><br/>
+
+      <label> User Name </label>
+      <input type="text" id="uname" placeholder="Enter your User name"><br/>
+      <label>Example:(289)654-1222</label><br/><br/>
+
+      <label> Password </label>
+      <input type="password" onkeyup="validatepass()" id="pass" placeholder="Enter your First name"><br/>
+
+      <div id="message">
+      <p id="len" class="invalid">Your password should be greater than 4 letter and less than 12 letters</p>
+      <p id="digit" class="invalid">Your password should contain atleast one digit</p>
+      <p id="ucase" class="invalid">Your password should contain atleast one Uppercase Letter</p>
+      <p id="lcase" class="invalid">Your password should contain atleast one Lowercase Letter</p>
+    </div>
+      <br/>
+
+      <button>Finish Registration</button>
+
+
+</body>
+</html>
