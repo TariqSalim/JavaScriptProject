@@ -1,4 +1,4 @@
-// Create a web page that allows th user to toss a con as often as desired. use the Math.random() function to determine the result, where 0 = heads and
+// Create a web page that allows the user to toss a con as often as desired. use the Math.random() function to determine the result, where 0 = heads and
 // 1 = tails. If the user's guess matches the computer's toss, the user wins. Use the coin image in the Student Data Files to display the winning result.
 
 
